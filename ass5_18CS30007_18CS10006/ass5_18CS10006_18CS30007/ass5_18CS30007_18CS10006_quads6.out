@@ -1,0 +1,286 @@
+
+                                                 Symbol Tables
+________________________________________________________________________________________________________________
+ST(Global)                                                                               Parent: NULL
+________________________________________________________________________________________________________________
+
+Name           Type                Initial Value          Size           Offset         Nested Table
+                                                                                                    
+maxSum         function                 -                   4              0            ptr-to-ST(maxSum)
+_lis           function                 -                   4              4            ptr-to-ST(_lis)
+lis            function                 -                   4              8            ptr-to-ST(lis)
+main           function                 -                   4              12           ptr-to-ST(main)
+
+****************************************************************************************************************
+
+
+________________________________________________________________________________________________________________
+ST(maxSum)                                                                               Parent: Global
+________________________________________________________________________________________________________________
+
+Name           Type                Initial Value          Size           Offset         Nested Table
+                                                                                                    
+arr            array(0,int)             -                   0              0                null
+n              int                      -                   4              0                null
+k              int                      -                   4              4                null
+max_sum        int                      -                   4              12               null
+INT_MIN        int                      -                   4              16               null
+i              int                      -                   4              20               null
+t0             int                      0                   4              24               null
+t1             int                                          4              28               null
+t2             int                                          4              32               null
+t3             int                      1                   4              36               null
+t4             int                                          4              40               null
+t5             int                                          4              44               null
+current_sum    int                      0                   4              48               null
+t6             int                      0                   4              52               null
+j              int                      -                   4              56               null
+t7             int                      0                   4              60               null
+t8             int                                          4              64               null
+t9             int                                          4              68               null
+t10            int                                          4              72               null
+t11            int                                          4              76               null
+t12            int                                          4              80               null
+t13            int                                          4              84               null
+t14            int                                          4              88               null
+max            int                      -                   4              92               null
+t15            int                                          4              96               null
+t16            int                                          4              100              null
+
+****************************************************************************************************************
+
+
+________________________________________________________________________________________________________________
+ST(_lis)                                                                                 Parent: Global
+________________________________________________________________________________________________________________
+
+Name           Type                Initial Value          Size           Offset         Nested Table
+                                                                                                    
+arr            array(0,int)             -                   0              0                null
+n              int                      -                   4              0                null
+max_ref        ptr(int)                 -                   4              4                null
+t0             int                      1                   4              12               null
+t1             int                      1                   4              16               null
+res            int                      -                   4              20               null
+max_ending_hereint                      1                   4              24               null
+t2             int                      1                   4              28               null
+i              int                      -                   4              32               null
+t3             int                      1                   4              36               null
+t4             int                                          4              40               null
+t5             int                                          4              44               null
+_lis           int                      -                   4              48               null
+t6             int                                          4              52               null
+t7             int                                          4              56               null
+t8             int                      1                   4              60               null
+t9             int                                          4              64               null
+t10            int                                          4              68               null
+t11            int                                          4              72               null
+t12            int                      1                   4              76               null
+t13            int                                          4              80               null
+t14            int                                          4              84               null
+t15            int                                          4              88               null
+t16            int                      1                   4              92               null
+t17            int                                          4              96               null
+t18            int                      1                   4              100              null
+t19            int                                          4              104              null
+t20            int                                          4              108              null
+t21            int                                          4              112              null
+t22            int                                          4              116              null
+
+****************************************************************************************************************
+
+
+________________________________________________________________________________________________________________
+ST(lis)                                                                                  Parent: Global
+________________________________________________________________________________________________________________
+
+Name           Type                Initial Value          Size           Offset         Nested Table
+                                                                                                    
+arr            array(0,int)             -                   0              0                null
+n              int                      -                   4              0                null
+max            int                      1                   4              8                null
+t0             int                      1                   4              12               null
+_lis           int                      -                   4              16               null
+t1             ptr(int)                                     4              20               null
+t2             int                                          4              24               null
+
+****************************************************************************************************************
+
+
+________________________________________________________________________________________________________________
+ST(main)                                                                                 Parent: Global
+________________________________________________________________________________________________________________
+
+Name           Type                Initial Value          Size           Offset         Nested Table
+                                                                                                    
+arr1           array(0,int)             -                   0              4                null
+t0             int                      1                   4              4                null
+t1             int                      4                   4              8                null
+t2             int                      2                   4              12               null
+t3             int                      10                  4              16               null
+t4             int                      2                   4              20               null
+t5             int                      3                   4              24               null
+t6             int                      1                   4              28               null
+t7             int                      0                   4              32               null
+t8             int                      20                  4              36               null
+k              int                      4                   4              40               null
+t9             int                      4                   4              44               null
+sld            int                      -                   4              48               null
+maxSum         int                      -                   4              52               null
+t10            int                      9                   4              56               null
+t11            int                                          4              60               null
+arr2           array(0,int)             -                   0              64               null
+t12            int                      10                  4              64               null
+t13            int                      22                  4              68               null
+t14            int                      9                   4              72               null
+t15            int                      33                  4              76               null
+t16            int                      21                  4              80               null
+t17            int                      50                  4              84               null
+t18            int                      41                  4              88               null
+t19            int                      60                  4              92               null
+len            int                      -                   4              96               null
+lis            int                      -                   4              100              null
+t20            int                      8                   4              104              null
+t21            int                                          4              108              null
+t22            int                      0                   4              112              null
+
+****************************************************************************************************************
+
+
+___________________________________________________________________________________________
+
+                                 Three Address Codes
+___________________________________________________________________________________________
+
+L0: maxSum: 
+L1:     max_sum = INT_MIN
+L2:     t0 = 0
+L3:     i = t0
+L4:     t2 = n - k
+L5:     t3 = 1
+L6:     t4 = t2 + t3
+L7:     if i < t4 goto 12
+L8:     goto 32
+L9:     t5 = i
+L10:     i = i + 1
+L11:     goto 4
+L12:     t6 = 0
+L13:     current_sum = t6
+L14:     t7 = 0
+L15:     j = t7
+L16:     if j < k goto 21
+L17:     goto 27
+L18:     t9 = j
+L19:     j = j + 1
+L20:     goto 16
+L21:     t10 = i + j
+L22:     t11 = t10 * 4
+L23:     t12 = arr[t11]
+L24:     t13 = current_sum + t12
+L25:     current_sum = t13
+L26:     goto 18
+L27:     param current_sum
+L28:     param max_sum
+L29:     t15 = call max, 2
+L30:     max_sum = t15
+L31:     goto 9
+L32:     return max_sum
+
+L33: _lis: 
+L34:     t0 = 1
+L35:     if n == t0 goto 38
+L36:     goto 41
+L37:     goto 41
+L38:     t1 = 1
+L39:     return t1
+L40:     goto 41
+L41:     t2 = 1
+L42:     max_ending_here = t2
+L43:     t3 = 1
+L44:     i = t3
+L45:     if i < n goto 50
+L46:     goto 76
+L47:     t5 = i
+L48:     i = i + 1
+L49:     goto 45
+L50:     param arr
+L51:     param i
+L52:     param max_ref
+L53:     t6 = call _lis, 3
+L54:     res = t6
+L55:     t8 = 1
+L56:     t9 = i - t8
+L57:     t10 = t9 * 4
+L58:     t11 = arr[t10]
+L59:     t12 = 1
+L60:     t13 = n - t12
+L61:     t14 = t13 * 4
+L62:     t15 = arr[t14]
+L63:     if t11 < t15 goto 66
+L64:     goto 47
+L65:     goto 70
+L66:     t16 = 1
+L67:     t17 = res + t16
+L68:     if t17 > max_ending_here goto 71
+L69:     goto 47
+L70:     goto 75
+L71:     t18 = 1
+L72:     t19 = res + t18
+L73:     max_ending_here = t19
+L74:     goto 47
+L75:     goto 47
+L76:     t21 = *max_ref
+L77:     if t21 < max_ending_here goto 80
+L78:     goto 83
+L79:     goto 83
+L80:     t22 = *max_ref
+L81:     *max_ref = max_ending_here
+L82:     goto 83
+L83:     return max_ending_here
+
+L84: lis: 
+L85:     t0 = 1
+L86:     max = t0
+L87:     param arr
+L88:     param n
+L89:     t1 = &max
+L90:     param t1
+L91:     t2 = call _lis, 3
+L92:     return max
+
+L93: main: 
+L94:     t0 = 1
+L95:     t1 = 4
+L96:     t2 = 2
+L97:     t3 = 10
+L98:     t4 = 2
+L99:     t5 = 3
+L100:     t6 = 1
+L101:     t7 = 0
+L102:     t8 = 20
+L103:     arr1 = arr1
+L104:     t9 = 4
+L105:     k = t9
+L106:     param arr1
+L107:     t10 = 9
+L108:     param t10
+L109:     param k
+L110:     t11 = call maxSum, 3
+L111:     sld = t11
+L112:     t12 = 10
+L113:     t13 = 22
+L114:     t14 = 9
+L115:     t15 = 33
+L116:     t16 = 21
+L117:     t17 = 50
+L118:     t18 = 41
+L119:     t19 = 60
+L120:     arr2 = arr2
+L121:     param arr2
+L122:     t20 = 8
+L123:     param t20
+L124:     t21 = call lis, 2
+L125:     len = t21
+L126:     t22 = 0
+L127:     return t22
+___________________________________________________________________________________________
